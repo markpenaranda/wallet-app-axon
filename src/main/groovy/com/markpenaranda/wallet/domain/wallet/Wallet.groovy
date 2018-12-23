@@ -17,7 +17,7 @@ class Wallet {
 
     @CommandHandler
     Wallet(CreateWallet command) {
-        apply(new WalletCreated(command.getId(), command.getLabel()))
+        apply(new WalletCreated(id: command.getId(),label: command.getLabel()))
     }
 
     Wallet() {

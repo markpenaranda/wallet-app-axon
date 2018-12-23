@@ -14,7 +14,7 @@ class WalletUpdaterEventHandler {
 
     @EventHandler
     void on(WalletCreated event) {
-        Wallet wallet = new Wallet(event.getId(), event.getLabel())
+        Wallet wallet = new Wallet(id: event.getId(), label: event.getLabel())
         repository.save(wallet)
     }
 

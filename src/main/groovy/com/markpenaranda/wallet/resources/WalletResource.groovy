@@ -39,8 +39,7 @@ class WalletResource {
     @RequestMapping(value = "/wallets", method = RequestMethod.POST)
     @ResponseStatus(value = NO_CONTENT)
     void createWallet (@RequestBody CreateWalletRequest request) {
-        commandGateway.send(new CreateWallet(identifierFactory.generateIdentifier(), request.getLabel()))
-
+        commandGateway.send(new CreateWallet(id: identifierFactory.generateIdentifier(), label: request.getLabel()))
     }
 
 

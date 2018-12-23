@@ -7,12 +7,6 @@ class Wallet {
 
     String label
 
-    Wallet() {}
-
-    Wallet(String id, String label) {
-        this.id = id
-        this.label = label
-    }
 
 
 }
