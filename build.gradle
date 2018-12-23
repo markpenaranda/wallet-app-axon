@@ -27,11 +27,12 @@ repositories {
 dependencies {
 	compile('org.axonframework:axon-spring-boot-starter:3.2')
 	compile('org.axonframework:axon-mongo:3.2')
+	compile('com.fasterxml.jackson.core:jackson-databind')
 	compile("org.springframework.boot:spring-boot-starter-data-mongodb")
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 	implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
 	implementation('org.springframework.boot:spring-boot-starter-web')
-	implementation('org.projectlombok:lombok')
+	complie('org.projectlombok:lombok')
 	testCompile('org.axonframework:axon-test:3.2')
 	implementation('org.codehaus.groovy:groovy')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')

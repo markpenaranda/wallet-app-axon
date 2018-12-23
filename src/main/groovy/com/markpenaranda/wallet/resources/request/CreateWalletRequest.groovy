@@ -7,6 +7,9 @@ import javax.validation.constraints.NotNull
 @Value
 class CreateWalletRequest {
 
-    @NotNull
     private String label
+
+    String getLabel () {
+        label
+    }
 }
